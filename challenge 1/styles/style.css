@@ -1,0 +1,98 @@
+body {
+    font-family: helvetica;
+    color: #FFFFFF;
+    background-image: url("../images/spaaace.jpg");
+}
+
+header {
+    background-color: #091c28;
+    border: 3px solid white;
+    border-radius: 3px;
+    margin: 15px;
+    padding: 0px 20px 40px 20px;
+}
+
+#header {
+    width: 100%;
+
+}
+
+p {
+    font-family: 'DM Mono', monospace;
+    margin: 5px;
+}
+
+header > h1, h2,
+p {
+    text-align: center;
+    margin: 5px;
+    padding: 10px;
+}
+
+h2 {
+    background-color: #5dbbd6;
+    color: #091c28;
+    border: 3px solid white;
+    border-radius: 3px;
+    margin: 15px auto;
+    padding: 40px 20px;
+    width: 70%;
+}
+
+#acceleration_slider {
+    width: 200px;
+}
+
+div {
+    text-align: center;
+    background-color: #091c28;
+    border: 3px solid white;
+    border-radius: 3px;
+    margin: 15px auto;
+    width: 70%;
+    
+
+}
+
+div:not(.velocity){
+    height: 200px;
+    padding: 20px;
+}
+
+.velocity{
+    padding: 20px;
+}
+
+.slider {
+    -webkit-appearance: none;
+    background-color: #FFFFFF;
+    height: 2px;
+    margin-left: 35px;
+}
+
+
+input {
+    margin: 10px;
+    width: 300px;
+    height: 30px;
+}
+
+label {
+    margin: 10px;
+    font-family: 'Mingzat', sans-serif;
+
+}
+
+button {
+    background-color: #FFFFFF;
+    border: none;
+
+    font-family: 'DM Mono', monospace;
+    font-size: 0.8em;
+
+    color: black;
+    padding: 9px 50px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+}
