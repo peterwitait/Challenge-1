@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+    <title>Challenge 1</title>
+    <link rel="stylesheet" type="text/css" href="styles/style.css">
+    <script src="scripts/main.js" defer></script>
+
+</head>
+
+<body>
+
+    <header>
+        <img src="images/SpaceX.png" id="header">
+        <h1>Welcome to the Interplanetary Transport System Interface (ITSI) Interface!</h1>
+        <p>This in-flight interface can track the progress of the journey and other factors. Enjoy your flight!</p>
+    </header>
+
+    <main>
+        
+        <h2>Control Ship</h2>
+        
+        <!--      speed/distance travelled    -->
+        <div class="velocity">
+            <h3>Speed</h3>
+            <label>Control the ship's speed here.</label><br />
+            <input type="range" min="0" max="250" value="0" class="slider" id="speed_slider" onchange="onSpeedChange()">
+            <p id="speed"></p>
+        </div>
+
+        <div class="velocity">
+            <h3>Distance Travelled:</h3>
+            <p id="distance"></p>
+        </div>
+
+        <h2>Supplies</h2>
+
+        <!--	food storage	    -->
+        <div class="storage">
+            <h3>Food Storage</h3>
+            <label for="food">Enter the amount of food you are bringing on board in kg:</label><br />
+            <input type="text" name="food" id="food" /><br />
+            <button onclick="foodRatio()">Convert</button><br />
+            <p id="food_left"></p>
+        </div>
+
+        <h2>Metrics</h2>
+
+        <!--	gravity converter	    -->
+        <div class="converter">
+            <h3>Gravity Converter</h3>
+            <label for="gravity">Enter the acceleration here.</label><br />
+            <input type="text" name="gravity" id="earth_gravity" /><br />
+            <button onclick="convertGravity()">Convert</button><br />
+            <p id="mars_gravity"></p>
+        </div>
+
+        <!--	miles converter	    -->
+        <div class="converter">
+            <h3>Miles Converter</h3>
+            <label for="miles">Earth Miles:</label><br />
+            <input type="text" name="miles" id="earth_miles" /><br />
+            <button onclick="convertMiles()">Convert</button><br />
+            <p id="mars_miles"></p>
+        </div>
+
+
+    </main>
+</body>
+
+</html>
